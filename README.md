@@ -8,7 +8,7 @@ Mãos à Obra, Raízes Resolvendo - Transformando Ideias em Soluções.
 
 
 Exemplos de rotas:
-<hr></hr>
+<hr>
 http://localhost/roots/<br>
 http://localhost/roots/?/login<br>
 http://localhost/roots/?/search?usuario=1&cargo=dev<br>
@@ -16,7 +16,7 @@ http://localhost/roots/?/search?usuario=1&cargo=dev<br>
 
 
 Usuário de teste:
-<hr></hr>
+<hr>
 usuario:
 thiagobraganobre@gmail.com
 
