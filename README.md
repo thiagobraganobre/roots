@@ -11,7 +11,7 @@ Exemplos de rotas:
 <hr></hr>
 http://localhost/roots/<br>
 http://localhost/roots/?/login<br>
-http://localhost/roots/?/login?usuario=1&senha=<br>
+http://localhost/roots/?/search?usuario=1&cargo=dev<br>
 
 
 
