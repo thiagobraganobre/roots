@@ -5,6 +5,6 @@ class MainController{
     }
 
     public function execute($request, $headers) {
-        return ['mensagem' => 'Main Controller'];
+        return ['message' => 'Main Controller'];
     }
 }
