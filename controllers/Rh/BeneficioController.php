@@ -1,6 +1,8 @@
 <?php
 class RH_BeneficioController{
-    public function execute($request) {
+    public function getSettings(){}
+
+    public function execute($request, $headers) {
         return ['mensagem' => 'Beneficios'];
     }
 }

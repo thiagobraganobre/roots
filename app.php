@@ -7,6 +7,8 @@ class App{
     
         $REQUEST_URI = $_SERVER['REQUEST_URI'];
         $metodo = $_SERVER['REQUEST_METHOD'];
+        $headers = getallheaders();
+
         $caminho = str_replace($config['pathUrl'] , '', $REQUEST_URI);
         $tratar = explode("?",$caminho);
         if (!empty($tratar[1]))
@@ -34,8 +36,12 @@ class App{
         
         // Roteamento
         if (array_key_exists($caminho, $rotas)) {
-            $controlador = $rotas[$caminho];
-            $resultado = $controlador->execute($_REQUEST);
+            $resource = $rotas[$caminho];
+            $resultado = $resource->execute($_REQUEST, $headers);
+            
+            if ($config['tests'])
+                Test::run($resource, $_REQUEST, $headers);
+
             echo json_encode($resultado);
         } else {
             echo json_encode(['code' => 404, 'message' => 'Rota não encontrada']);

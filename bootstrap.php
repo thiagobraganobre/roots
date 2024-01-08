@@ -15,6 +15,16 @@ spl_autoload_register(function ($class) {
         return;
     }
 
+    if(file_exists('business/'.$path)){
+        include 'business/'.$path;
+        return;
+    }
+
+    if(file_exists('lib/'.$path)){
+        include 'lib/'.$path;
+        return;
+    }
+
 
     $parts = explode('_', $class);
     if (!empty($parts))

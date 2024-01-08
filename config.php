@@ -2,6 +2,7 @@
 //pathUrl, exemplo na pasta roots. http://localhost/roots
 
 return $config = [
+    'tests' => false,
     'pathUrl' => '/roots',
 
     'db' => [

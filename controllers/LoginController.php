@@ -1,6 +1,8 @@
 <?php
-class LoginController{
-    public function execute($request) {
+class LoginController {
+    public function getSettings(){}
+
+    public function execute($request, $headers) {
         $login = $request['usuario'];
         $senha = $request['senha'];
         

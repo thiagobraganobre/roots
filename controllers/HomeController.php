@@ -1,6 +1,8 @@
 <?php
 class HomeController {
-    public function execute($request) {
+    public function getSettings(){}
+
+    public function execute($request, $headers) {
         return ['mensagem' => 'Home Controller'];
     }
 }
